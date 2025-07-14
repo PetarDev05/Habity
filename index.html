@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./src/output.css">
+    <title>Habity</title>
+  </head>
+  <body class="p-0 m-0 box-border font-roboto pt-[100px]">
+    <!-- HEADER -->
+    <header
+      class="w-full h-[100px] flex flex-row items-center justify-between p-5 fixed top-0 left-0 right-0 z-10 bg-white shadow-[0_0_4px] shadow-black"
+    >
+      <div class="h-full flex flex-row items-center gap-5">
+        <a href="./index.html"
+          ><img
+            src="./src/images/logo.png"
+            alt="logo"
+            class="h-12 cursor-pointer"
+        /></a>
+        <p class="text-3xl font-bold text-blue-500 max-[400px]:hidden">
+          <a href="./index.html">Habity</a>
+        </p>
+      </div>
+      <div class="h-full flex flex-row items-center gap-5">
+        <a
+          class="text-2xl text-black px-4 py-2 font-bold cursor-pointer rounded-xl hover:bg-blue-200 transition ease-in-out duration-300 max-md:hidden "
+          href="./pricing.html"
+          >Pricing</a
+        >
+
+        <a
+          role="button"
+          href="./sign-in.html"
+          class="px-5 py-2 bg-blue-600 text-white text-xl rounded-lg font-semibold transition ease-in-out duration-300 cursor-pointer hover:bg-blue-400 max-md:hidden"
+          >Sign in</a
+        >
+      </div>
+
+      <!-- MENU BUTTON -->
+      <div
+        class="absolute top-[28px] right-[28px] w-14 h-11 js-burger-menu-icon md:hidden"
+      >
+        <div
+          class="w-10 h-1 rounded-lg bg-black absolute left-2 top-2 js-line-1 transition duration-100 ease-in-out"
+        ></div>
+        <div
+          class="w-10 h-1 rounded-lg bg-black absolute left-2 top-5 js-line-2"
+        ></div>
+        <div
+          class="w-10 h-1 rounded-lg bg-black absolute left-2 top-8 js-line-3 transition duration-100 ease-in-out"
+        ></div>
+      </div>
+      <!-- MENU BUTTON END -->
+    </header>
+    <!-- HEADER END -->
+
+    <!-- MENU -->
+    <nav
+      class="w-[300px] h-[calc(100vh-100px)] fixed right-[-310px] top-[100px] flex flex-col items-center justify-center shadow-[0_0_4px] shadow-black js-burger-menu transition-all duration-300 ease-in-out max-[300px]:w-full md:hidden z-5 bg-gradient-to-bl from-fuchsia-200 to-blue-300"
+    >
+      <a
+        href="./pricing.html"
+        class="w-full text-center font-semibold text-2xl py-3"
+        >Pricing</a
+      >
+      <a
+        href="./sign-in.html"
+        class="w-full text-center font-semibold text-2xl py-2"
+        >sign-in</a
+      >
+    </nav>
+    <!-- MENU END -->
+
+    <!-- HERO -->
+    <section
+      class="w-full h-[calc(100vh-100px)] bg-gradient-to-r from-fuchsia-200 to-blue-300 relative"
+    >
+      <div
+        class="flex flex-col items-center justify-between gap-10 absolute top-[50%] left-[50%] -translate-1/2"
+      >
+        <h1 class="text-5xl font-[700] text-center sm:text-6xl lg:text-7xl">
+          Your smart tool for easier <br />and faster progress
+        </h1>
+        <p
+          class="text-md font-medium text-center max-sm:hidden md:text-xl lg:text-2xl"
+        >
+          Improve your skills and skyrocket your productivity using Habity
+        </p>
+        <a
+          class="font-semibold text-white px-5 py-2 rounded-lg bg-blue-500 lg:text-xl lg:px-7 lg:py-3 cursor-pointer"
+          >Try Habity Free</a
+        >
+      </div>
+    </section>
+    <!-- HERO END -->
+
+    <!-- HERO EXTENSION -->
+    <section
+      class="w-full h-30 bg-gradient-to-r from-fuchsia-200 to-blue-300 rounded-b-[50px] sm:h-40 sm:rounded-b-[75px] lg:rounded-b-[120px]"
+    ></section>
+    <!-- HERO EXTENSION END -->
+
+    <!-- FEATURES -->
+    <section
+      class="w-full flex flex-col items-center justify-between gap-10 py-10 bg-white"
+    >
+      <h1 class="text-5xl font-[700] text-center sm:text-6xl lg:text-7xl">Features</h1>
+      <p class="text-md font-medium text-center md:text-xl lg:text-2xl px-10">
+        Tracking progress significantly boosts your motivation for achieving
+        your goals.<br />
+        It halps you to stay focused and empowered.<br />
+        You will have made available to you calendars, graphs, progress tables,
+        success metrics and so much more...<br />Grab your opportunity
+      </p>
+
+      <div class="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:gap-15">
+        <div
+          class="w-[280px] p-3 bg-gradient-to-bl rounded-2xl from-blue-200 to-teal-200 flex flex-col items-start gap-3 sm:w-[400px] sm:p-5 xl:w-[500px]"
+        >
+          <img
+            class="w-full h-[256px] rounded-2xl object-cover object-left sm:h-[360px] xl:h-[460px]"
+            src="./src/images/circle.avif"
+            alt=""
+          />
+          <p class="text-lg text-black sm:text-xl font-semibold xl:text-2xl">
+            Interacitve progress circles and bars
+          </p>
+        </div>
+
+        <div
+          class="w-[280px] p-3 bg-gradient-to-br rounded-2xl from-blue-200 to-fuchsia-300 flex flex-col items-start gap-3 sm:w-[400px] sm:p-5 xl:w-[500px]"
+        >
+          <img
+            class="w-full h-[256px] rounded-2xl object-cover object-left sm:h-[360px] xl:h-[460px]"
+            src="./src/images/table.png"
+            alt=""
+          />
+          <p class="text-lg text-black sm:text-xl font-semibold xl:text-2xl">
+            Intuitive progress tables
+          </p>
+        </div>
+
+        <div
+          class="w-[280px] p-3 bg-gradient-to-br rounded-2xl from-teal-200 to-yellow-200 flex flex-col items-start gap-3 sm:w-[400px] sm:p-5 xl:w-[500px]"
+        >
+          <img
+            class="w-full h-[256px] rounded-2xl object-cover object-left sm:h-[360px] xl:h-[460px]"
+            src="./src/images/habits.png"
+            alt=""
+          />
+          <p class="text-lg text-black sm:text-xl font-semibold xl:text-2xl">
+            Simple Habit preview
+          </p>
+        </div>
+
+        <div
+          class="w-[280px] p-3 bg-gradient-to-bl rounded-2xl from-fuchsia-200 to-yellow-200 flex flex-col items-start gap-3 sm:w-[400px] sm:p-5 xl:w-[500px]"
+        >
+          <img
+            class="w-full h-[256px] rounded-2xl object-cover object-left sm:h-[360px] xl:h-[460px]"
+            src="./src/images/graph.webp"
+            alt=""
+          />
+          <p class="text-lg text-black sm:text-xl font-semibold xl:text-2xl">
+            Graphs for tracking consistency
+          </p>
+        </div>
+      </div>
+
+      <a
+        href="./pricing.html"
+        class="font-semibold text-white px-5 py-2 rounded-lg bg-blue-500 lg:text-xl lg:px-7 lg:py-3 cursor-pointer"
+        >Explore Pricing Options</a
+      >
+    </section>
+    <!-- FEATURES END -->
+
+    <!-- SEPARATOR -->
+    <div class="w-full h-3 bg-gradient-to-r from-fuchsia-400 to-blue-400"></div>
+    <!-- SEPARATOR END -->
+    <!-- FOOTER -->
+    <footer
+      class="w-full p-10 bg-gray-100 flex flex-col items-center justify-between gap-5 text-black font-semibold"
+    >
+      <div
+        class="w-full flex flex-col items-center justify-between gap-10 lg:flex-row lg:px-5 lg:justify-around"
+      >
+        <div class="flex flex-col items-center justify-between gap-5">
+          <p class="text-2xl">Social</p>
+          <div class="flex flex-row items-center justify-between gap-5">
+            <i
+              class="fab cursor-pointer fa-facebook-f text-blue-600 text-3xl"
+            ></i>
+            <i class="fab cursor-pointer fa-twitter text-blue-400 text-3xl"></i>
+            <i
+              class="fab cursor-pointer fa-instagram text-pink-400 text-3xl"
+            ></i>
+            <i class="fab cursor-pointer fa-youtube text-red-500 text-3xl"></i>
+          </div>
+        </div>
+        <div class="flex flex-col items-center justify-between gap-5">
+          <p class="text-2xl">Get Habity On</p>
+          <div
+            class="flex flex-col items-center justify-between gap-5 sm:flex-row"
+          >
+            <img src="./src/images/play.png" alt="" class="h-10" />
+            <img src="./src/images/app-store.png" alt="" class="h-10" />
+          </div>
+        </div>
+      </div>
+
+      <hr class="w-full bg-black h-1" />
+
+      <div
+        class="w-full flex flex-col items-center gap-5 sm:flex-row sm:justify-between sm:px-5"
+      >
+        <p class="text-3xl font-bold text-blue-500">Habity</p>
+        <div
+          class="flex flex-col items-center justify-between gap-3 sm:flex-row sm:gap-5"
+        >
+          <p class="text-2xl font-semibold">Terms</p>
+          <p class="text-2xl font-semibold">Privacy Policy</p>
+        </div>
+      </div>
+    </footer>
+    <!-- FOOTER END -->
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
